@@ -95,9 +95,22 @@ h1 {
 
 .color-switcher {
     display: inline-block;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: .4rem solid rgba(0, 0, 0, 0);
+    margin: .4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-switcher:hover {
+    display: inline-block;
     width: 4rem;
     height: 4rem;
+    margin: 0;
+    border: rem solid rgba(0, 0, 0, 0);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .label {
@@ -124,4 +137,28 @@ h1 {
 
 .swirl {
     background-color: rgba(212,207,201,1);
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 0;
+    background-color: rgba(54, 57, 60, 1);
+    color: rgba(255,255,255,1);
+    text-align: center;
+    font-weight: 400;
+}
+
+footer a {
+    display: inline-block;
+    color: rgba(255,255,255,.7);
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,1)
 }
