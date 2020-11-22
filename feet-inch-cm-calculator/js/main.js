@@ -21,14 +21,14 @@ const converter = function convertLenght() {
     else if (foot === 0) {
         if (isNaN(inch)) printResult('Nem adtál meg számot!', 'red');
         else if (inch < 0) printResult('Az inch értéke nem lehet negatív szám!', 'red');
-        else if (inch === 0) printResult('Nem lehet a láb és az inch is nulla!', 'red');
+        else if (inch === 0) printResult('Természetesen '+getCentimeter(foot, inch)+' az eredmény.', 'green');
         else if (inch >= 12) printResult('Az inch 1 és 11 közötti értéket vehet fel!', 'red');
-        else if (12 > inch > 0) printResult(getCentimeter(foot, inch), 'white');
+        else if (12 > inch > 0) printResult(getCentimeter(foot, inch), 'green');
     } else if (foot > 0) {
         if (isNaN(inch)) cprintResult('Nem adtál meg számot!', 'red');
         else if (inch < 0) printResult('Az inch értéke nem lehet negatív szám!', 'red');
         else if (inch >= 12) printResult('Az inch 1 és 11 közötti értéket vehet fel!', 'red');
-        else if (12 > inch > 0) printResult(getCentimeter(foot, inch), 'white');
+        else if (12 > inch > 0) printResult(getCentimeter(foot, inch), 'green');
     }
     
 }
