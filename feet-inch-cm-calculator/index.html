@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>láb/inch -> cm kalkulátor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Hosszmérték konverter</h1>
+        Kiváncsi vagy, hány centiméteres egy 5 láb 10 inch magas ember?<br>
+        Add meg a két számot és kattints a KONVERTÁLÁS gombra!
+        <div class="group">
+            <label for="input-foot"">Láb</label>
+            <input type="number" name="input-foot" min="0" value="0" class="input-foot">
+        </div>
+        <div class="group">
+            <label for="input-inch"">Inch</label>
+            <input type="number" name="input-inch" min="0" max="11" value="0" class="input-inch">
+        </div>
+        <div class="group">
+            <button class="convert-button">Mutasd kérlek!</button>
+        </div>
+
+        <div class="result"></div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

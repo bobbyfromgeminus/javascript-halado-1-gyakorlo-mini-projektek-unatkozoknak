@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    line-height: 1rem;
+    transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-ms-transition: all 0.05s ease-in;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0 1fr 0;
+    grid-template-rows: 0 1fr 0;
+    background-color: rgb(135,135,135);
+    background: linear-gradient(180deg, rgba(170,173,176,1) 0%, rgba(200,203,206,1) 50%, rgba(170,173,176,1) 100%);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: .25fr 1fr .25fr;
+        grid-template-rows: .5fr 1fr .5fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: .5fr 1fr .5fr;
+        grid-template-rows: .5fr 1fr .5fr;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .5fr 1fr .5fr;
+    }
+}
+
+main {
+    display: block;
+    background-color: rgba(74, 77, 80, 1);
+    color: rgba(255,255,255,1);
+    padding: 2rem 3rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    line-height: 1.4rem;
+    box-shadow: 0 .5rem 1rem rgba(74, 77, 80, 1);
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    padding: 1.5rem;
+    margin: 0 0 1.5rem 0;
+    background-color: rgba(54, 57, 60, 1);
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+.group {
+    display: block;
+    clear: both;
+    margin: auto;
+    width: 60%;
+    padding: 1.5rem 0 0 0;
+}
+
+input[type=number] {
+    width: 60%;
+    display: block;
+    float: right;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+
+label {
+    width: 40%;
+    display: block;
+    float: left;
+    padding: 0.5rem;
+    color: rgba(255,255,255,1);
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+}
+
+button {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    color: rgba(255,255,255,1);
+    background-color: rgba(200, 100, 0, 1);
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: rgba(220, 120, 20, 1);
+}
+
+.result {
+    display: block;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    background-color: rgba(84, 87, 90, 1);
+    border-color: rgba(84, 87, 90, 1);
+    color: rgba(255,255,255,1);
+}
+
+.red {
+    border: 1px solid rgba(214, 30, 20, .7);
+    padding: 2rem;
+    background-color: rgba(214, 30, 20, .1);
+    transition: border-color 1s;
+    transition: background-color 1s;
+}
+
+.white {
+    border: 1px solid rgba(30, 214, 30, .7);
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: rgba(30, 214, 30, .1);
+    transition: border-color 1s;
+    transition: background-color 1s;
+}
